@@ -27,7 +27,7 @@ defined('_JEXEC') or die('Restricted access');
                   </script>-->
 
               <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
-                  poster="http://video-js.zencoder.com/oceans-clip.png"
+                  poster="images/com_video4you/<?php echo $this->item->image; ?>"
                   data-setup='{ "nativeControlsForTouch": false, "techOrder": ["html5","flash"]}'>
                 <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
                 <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />

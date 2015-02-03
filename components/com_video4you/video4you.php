@@ -21,7 +21,9 @@ $document = JFactory::getDocument();
 $document->addStyleSheet('components/com_video4you/assets/css/video4you.css');
 $document->addStyleSheet('components/com_video4you/assets/videojs/video-js.css');
 $document->addStyleSheet('components/com_video4you/assets/videojs/video-js.min.css');
+$document->addStyleSheet('components/com_video4you/assets/videojs/quality-selector/button-styles.css');
 $document->addScript('components/com_video4you/assets/videojs/video.js');
+$document->addScript('components/com_video4you/assets/videojs/quality-selector/video-quality-selector.js');
 $document->addCustomTag( '<script>videojs.options.flash.swf = "/components/com_video4you/assets/videojs/video-js.swf";</script>' );
 
 // Require helper file
