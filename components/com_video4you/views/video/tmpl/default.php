@@ -22,13 +22,13 @@ defined('_JEXEC') or die('Restricted access');
 	<p><strong>Video_480p</strong>: <?php echo $this->item->video480p; ?></p>
 	<p><strong>Video_720p</strong>: <?php echo $this->item->video720p; ?></p>
 	<p><strong>Video_1080p</strong>: <?php echo $this->item->video1080p; ?></p>
-                                        <script>
+<!--                                        <script>
                     videojs.options.flash.swf = "video-js.swf";
-                  </script>
+                  </script>-->
 
               <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
                   poster="http://video-js.zencoder.com/oceans-clip.png"
-                  data-setup="{}">
+                  data-setup='{ "nativeControlsForTouch": false, "techOrder": ["html5","flash"]}'>
                 <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
                 <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
                 <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />

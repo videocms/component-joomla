@@ -19,6 +19,10 @@ if(!defined('DS')){
 // Set the component css/js
 $document = JFactory::getDocument();
 $document->addStyleSheet('components/com_video4you/assets/css/video4you.css');
+$document->addStyleSheet('components/com_video4you/assets/videojs/video-js.css');
+$document->addStyleSheet('components/com_video4you/assets/videojs/video-js.min.css');
+$document->addScript('components/com_video4you/assets/videojs/video.js');
+$document->addCustomTag( '<script>videojs.options.flash.swf = "/components/com_video4you/assets/videojs/video-js.swf";</script>' );
 
 // Require helper file
 JLoader::register('Video4youHelper', dirname(__FILE__) . DS . 'helpers' . DS . 'video4you.php');
