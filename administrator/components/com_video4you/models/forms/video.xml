@@ -34,7 +34,7 @@
 			name="text"
 			rows="10"
 			cols="5"
-			type="textarea"
+			type="editor"
 		/>
 		<field
 			default=""
