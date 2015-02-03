@@ -25,9 +25,9 @@ jimport('joomla.filter.output');
 		$item->alias = JFilterOutput::stringURLSafe($item->alias);
 		$item->linkURL = JRoute::_('index.php?option=com_video4you&view=video&id='.$item->id.':'.$item->alias);
 		?>
-		<p><strong>Title</strong>: <a href="<?php echo $item->linkURL; ?>"><?php echo $item->title; ?></a></p>
-		<p><strong>Text</strong>: <?php echo $item->text; ?></p>
-		<p><strong>Category</strong>: <?php echo $item->category; ?></p>
+                <h2><a href="<?php echo $item->linkURL; ?>"><?php echo $item->title; ?></a></h2>
+		<p><?php echo $item->text; ?></p>
+		<p><strong>Kategoria</strong>: <?php echo $item->category; ?></p>
 		<?php if($item->image){ ?>
 			<p><strong>Image</strong>: <img src="images/com_video4you/thumb/<?php echo $item->image; ?>" /></p>
 		<?php } ?>

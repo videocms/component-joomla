@@ -13,9 +13,9 @@ defined('_JEXEC') or die('Restricted access');
 
 ?>
 <div id="video4you-content">
-	<p><strong>Title</strong>: <?php echo $this->item->title; ?></p>
-	<p><strong>Text</strong>: <?php echo $this->item->text; ?></p>
-	<p><strong>Category</strong>: <?php echo $this->item->category; ?></p>
+	<h2><?php echo $this->item->title; ?></h2>
+	<p><?php echo $this->item->text; ?></p>
+	<p><strong>Kategoria</strong>: <?php echo $this->item->category; ?></p>
 	<?php if($this->item->image){ ?>
 		<p><strong>Image</strong>: <img src="images/com_video4you/<?php echo $this->item->image; ?>" /></p>
 	<?php } ?>
