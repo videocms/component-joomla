@@ -16,10 +16,8 @@ $db = JFactory::getDBO();
 jimport('joomla.filter.output');
 ?>
 <div id="video4you-video4you">
+        <div class="row">
 	<?php foreach($this->items as $item){ ?>
-    
-    
-    <div class="row">
         <div class="col-xs-6 col-sm-4">
             <?php
 		$item->category = $db->setQuery('SELECT #__categories.title FROM #__categories WHERE #__categories.id = "'.$item->category.'"')->loadResult();
@@ -37,7 +35,6 @@ jimport('joomla.filter.output');
                 </a>
                 <p><strong>Kategoria</strong>: <?php echo $item->category; ?></p>
         </div>
-    </div>
-	
 	<?php }; ?>
+       </div>
 </div>
