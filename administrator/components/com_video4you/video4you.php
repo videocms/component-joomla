@@ -36,6 +36,7 @@ jimport('joomla.application.component.controller');
 $document = JFactory::getDocument();
 $document->addStyleSheet('components/com_video4you/assets/css/video4you.css');
 $document->addScript('components/com_video4you/assets/js/video4you.js');
+$document->addScript('components/com_video4you/assets/js/jquery.slugify.js');
 
 // Get an instance of the controller prefixed by Video4you
 $controller = JControllerLegacy::getInstance('Video4you');
