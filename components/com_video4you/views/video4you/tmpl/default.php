@@ -25,16 +25,13 @@ jimport('joomla.filter.output');
 		$item->alias = JFilterOutput::stringURLSafe($item->alias);
 		$item->linkURL = JRoute::_('index.php?option=com_video4you&view=video&id='.$item->id.':'.$item->alias);
 		?>
-                <h2><a href="<?php echo $item->linkURL; ?>"><?php echo $item->title; ?></a></h2>
-		<p><?php echo $item->text; ?></p>
-		<p><strong>Kategoria</strong>: <?php echo $item->category; ?></p>
+                <a href="<?php echo $item->linkURL; ?>">
+                <h2><?php echo $item->title; ?></h2>
 		<?php if($item->image){ ?>
-			<p><strong>Image</strong>: <img src="images/com_video4you/thumb/<?php echo $item->image; ?>" /></p>
+		<img src="images/com_video4you/thumb/<?php echo $item->image; ?>" /></p>
 		<?php } ?>
-		<p><strong>Video_480p</strong>: <?php echo $item->video480p; ?></p>
-		<p><strong>Video_720p</strong>: <?php echo $item->video720p; ?></p>
-		<p><strong>Video_1080p</strong>: <?php echo $item->video1080p; ?></p>
-		<p><strong>Link URL</strong>: <a href="<?php echo $item->linkURL; ?>">Go to page</a> - <?php echo $item->linkURL; ?></p>
-		<br /><br />
+                </a>
+                <p><strong>Kategoria</strong>: <?php echo $item->category; ?></p>
+	
 	<?php }; ?>
 </div>
