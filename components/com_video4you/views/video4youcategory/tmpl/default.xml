@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_VIDEO4YOU_VIDEO4YOUCATEGORY_VIEW_DEFAULT_TITLE">
+		<message>COM_VIDEO4YOU_VIDEO4YOUCATEGORY_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_video4you/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				required="true"
+				type="video4youcategoryzero"
+				label="COM_VIDEO4YOU_VIDEO4YOUCATEGORY_FIELD_CATEGORY_LABEL"
+				description="COM_VIDEO4YOU_VIDEO4YOUCATEGORY_FIELD_CATEGORY_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

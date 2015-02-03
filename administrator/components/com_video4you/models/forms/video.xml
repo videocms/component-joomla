@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_video4you/models/rules"
+	addfieldpath="/administrator/components/com_video4you/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+		<field
+			class="inputbox validate-title"
+			default=""
+			description=""
+			label="Title"
+			name="title"
+			required="true"
+			size="40"
+			type="text"
+			validate="title"
+		/>
+		<field
+			default=""
+			description=""
+			label="Text"
+			name="text"
+			rows="10"
+			cols="5"
+			type="textarea"
+		/>
+		<field
+			default=""
+			description=""
+			label="Category"
+			name="category"
+			required="true"
+			extension="com_video4you"
+			type="category"
+			validate="category"
+		/>
+		<field
+			default=""
+			description=""
+			label="Image"
+			name="image"
+			type="file"
+		/>
+		<field
+			class="inputbox video480p"
+			default=""
+			description=""
+			label="Video_480p"
+			name="video480p"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox video720p"
+			default=""
+			description=""
+			label="Video_720p"
+			name="video720p"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox video1080p"
+			default=""
+			description=""
+			label="Video_1080p"
+			name="video1080p"
+			size="40"
+			type="text"
+		/>
+	</fieldset>
+</form>

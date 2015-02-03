@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_video4you"
+			section="component"
+		/>
+	</fieldset>
+	<fieldset
+		name="image_params"
+		label="Images"
+		description="Image paremeters">
+		<field
+			name="image_width"
+			type="text"
+			label="Width (px)"
+			description="Set the width of the image in px to be resized to. (Max: 900)"
+			default="600"
+		/>
+		<field
+			name="image_height"
+			type="text"
+			label="Height (px)"
+			description="Set the height of the image in px to be resized to. (Max: 700)"
+			default="500"
+		/>
+		<field
+			name="image_thumb_width"
+			type="text"
+			label="Thumbnail Width (px)"
+			description="Set the width of the image thumbnail in px to be resized to. (Max: 400)"
+			default="100"
+		/>
+		<field
+			name="image_thumb_height"
+			type="text"
+			label="Thumbnail Height (px)"
+			description="Set the height of the image thumbnail in px to be resized to. (Max: 400)"
+			default="100"
+		/>
+	</fieldset>
+</config>
