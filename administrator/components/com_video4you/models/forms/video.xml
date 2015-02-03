@@ -27,6 +27,15 @@
 			type="text"
 			validate="title"
 		/>
+                <field
+			default=""
+                        disabled="1"
+			description=""
+			label="Alias"
+			name="alias"
+			size="40"
+			type="text"
+		/>
 		<field
 			default=""
 			description=""
