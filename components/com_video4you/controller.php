@@ -19,6 +19,9 @@ jimport('joomla.application.component.controller');
  */
 class Video4youController extends JControllerLegacy
 {
-
+    function test() {
+        $tekst = JRequest::getVar( 'id' );
+        echo $tekst;
+    }
 }
 ?>
