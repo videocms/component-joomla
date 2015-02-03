@@ -18,6 +18,7 @@ if(!defined('DS')){
 
 // Set the component css/js
 $document = JFactory::getDocument();
+$document->addStyleSheet('components/com_video4you/assets/css/bootstrap.css');
 $document->addStyleSheet('components/com_video4you/assets/css/video4you.css');
 $document->addStyleSheet('components/com_video4you/assets/videojs/video-js.css');
 $document->addStyleSheet('components/com_video4you/assets/videojs/video-js.min.css');
