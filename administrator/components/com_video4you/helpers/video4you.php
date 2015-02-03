@@ -22,7 +22,6 @@ abstract class Video4youHelper
 	public static function addSubmenu($submenu) 
 	{
 		JHtmlSidebar::addEntry(JText::_('Video4you'), 'index.php?option=com_video4you&view=video4you', $submenu == 'video4you');
-		JHtmlSidebar::addEntry(JText::_('Vast'), 'index.php?option=com_video4you&view=vast', $submenu == 'vast');
 		JHtmlSidebar::addEntry(JText::_('Categories'), 'index.php?option=com_categories&view=categories&extension=com_video4you', $submenu == 'categories');
 
 		// set some global property
