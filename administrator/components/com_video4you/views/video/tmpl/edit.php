@@ -63,3 +63,6 @@ $componentParams = JComponentHelper::getParams('com_video4you');
 		<?php echo JHtml::_('form.token'); ?>
 	</div>
 </form>
+<script type="text/javascript">
+$('#jform_alias').slugify('#jform_title');
+</script>
